@@ -17,7 +17,7 @@ return new class extends Migration
             $table->id();
             $table->string('name',15);
             $table->string('phone',15);
-            $table->string('email',254);
+            $table->string('email',254)->charset("utf8");
             $table->timestamps();
         });
     }
